@@ -23,13 +23,11 @@ set(plugins
     task/task
     task/task-conti
     task/task-unilateral
-    feature/feature-point6d
     feature/feature-pose
     feature/feature-vector3
     feature/feature-generic
     feature/feature-joint-limits
     feature/feature-1d
-    feature/feature-point6d-relative
     feature/feature-visual-point
     feature/feature-task
     feature/feature-line-distance
@@ -78,7 +76,6 @@ if(WIN32)
 endif(WIN32)
 
 set(feature-task_deps feature-generic task)
-set(feature-point6d-relative_deps feature-point6d)
 set(sot_deps task feature-posture)
 set(sequencer_deps sot)
 set(task-conti_deps task)
